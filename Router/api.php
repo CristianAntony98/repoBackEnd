@@ -89,7 +89,7 @@ $router->put('/installation', [InstallationController::class, 'update']);
 $router->put('/move', [MovementsController::class, 'update']);
 
 $router->delete('/mark', [MarcaController::class, 'destroy']);
-$router->delete('/category', [CategoriaController::class, 'destroy']);
+$router->delete('/category/:id', [CategoriaController::class, 'destroy']);
 $router->delete('/ram', [RamController::class, 'destroy']);
 $router->delete('/disk', [DiscoController::class, 'destroy']);
 $router->delete('/screen', [PantallaController::class, 'destroy']);
