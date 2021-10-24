@@ -4,7 +4,7 @@ define("DS", "/");
 
 require '../vendor/autoload.php';
 require_once './../Config/Autoload.php';
-header('ACCESS_CONTROL_ALLOW_ORIGIN: *');
+header('Access-Control-Allow_Origin: *');
 
 Autoload::run();
 
