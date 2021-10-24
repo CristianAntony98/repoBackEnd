@@ -2,9 +2,14 @@
 date_default_timezone_set("America/Mexico_City");
 define("DS", "/");
 
+header('Access-Control-Allow-Origin: *'); 
+header("Access-Control-Allow-Credentials: true");
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Max-Age: 1000');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
+
 require '../vendor/autoload.php';
 require_once './../Config/Autoload.php';
-header('Access-Control-Allow_Origin: *');
 
 Autoload::run();
 
