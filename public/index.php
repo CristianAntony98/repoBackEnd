@@ -4,6 +4,8 @@ define("DS", "/");
 
 require '../vendor/autoload.php';
 require_once './../Config/Autoload.php';
+header('ACCESS_CONTROL_ALLOW_ORIGIN: *');
+
 Autoload::run();
 
 use Dotenv\Dotenv;
