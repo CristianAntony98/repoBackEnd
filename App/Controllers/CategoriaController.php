@@ -18,7 +18,7 @@ class CategoriaController extends Controller{
         $this->json($categoria);
     }
 
-    public function insert(Request $req){
+    public function insert($req){
         $categoria = new Categoria();
         $categoria->nombre = $req->getBody()->nombre;
         $categoria->descripcion = $req->getBody()->descripcion;
@@ -29,6 +29,7 @@ class CategoriaController extends Controller{
         $categoria = new Categoria();
         $categoria->categoria_id = $req->getBody()->id;
         $categoria->nombre = $req->getBody()->nombre;
+        $categoria->descripcion = $req->getBody()->descripcion;
         $categoria->save();
     }
 
