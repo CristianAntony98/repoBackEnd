@@ -100,7 +100,7 @@ $router->delete('/app', [AplicacionController::class, 'destroy']);
 $router->delete('/file', [ArchivoController::class, 'destroy']);
 $router->delete('/device', [EquipoController::class, 'destroy']);
 $router->delete('/record', [HistorialController::class, 'destroy']);
-$router->delete('/employee', [EmpleadoController::class, 'destroy']);
+$router->delete('/employee/:id', [EmpleadoController::class, 'destroy']);
 $router->delete('/service', [ServicesController::class, 'destroy']);
 $router->delete('/installation', [InstallationController::class, 'destroy']);
 $router->delete('/move', [MovementsController::class, 'destroy']);
