@@ -95,7 +95,7 @@ $router->delete('/disk', [DiscoController::class, 'destroy']);
 $router->delete('/screen', [PantallaController::class, 'destroy']);
 $router->delete('/location', [UbicacionController::class, 'destroy']);
 $router->delete('/seat', [SedeController::class, 'destroy']);
-$router->delete('/role', [RolController::class, 'destroy']);
+$router->delete('/role/:id', [RolController::class, 'destroy']);
 $router->delete('/app', [AplicacionController::class, 'destroy']);
 $router->delete('/file', [ArchivoController::class, 'destroy']);
 $router->delete('/device', [EquipoController::class, 'destroy']);
