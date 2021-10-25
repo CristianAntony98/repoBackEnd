@@ -20,6 +20,7 @@ class CategoriaController extends Controller{
 
     public function insert(Request $req){
         $categoria = new Categoria();
+        echo $req;
         $categoria->nombre = $req->getBody()->nombre;
         $categoria->descripcion = $req->getBody()->descripcion;
         $categoria->save();
