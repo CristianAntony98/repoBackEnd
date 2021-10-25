@@ -21,7 +21,7 @@ class PantallaController extends Controller{
     public function insert(Request $req){
         $pantalla = new Pantalla();
         $pantalla->tipo = $req->getBody()->tipo;
-        $pantalla->capacidad = $req->getBody()->capacidad;
+        $pantalla->tamano = $req->getBody()->tamano;
         $pantalla->save();
     }
 
