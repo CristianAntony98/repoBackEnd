@@ -36,7 +36,7 @@ class EquipoController extends Controller{
 
     public function update(Request $req){
         $equipo = new Equipo();
-        $equipo->equipo_id = $req->getBody()->id;
+        $equipo->equipo_id = $req->getBody()->equipo_id;
         $equipo->nombre = $req->getBody()->nombre;
         $equipo->serial = $req->getBody()->serial;
         $equipo->ip_equipo = $req->getBody()->ip_equipo;
