@@ -44,10 +44,10 @@ class EquipoController extends Controller{
         $equipo->fecha_compra = $req->getBody()->fecha_compra;
         $equipo->marca_id = $req->getBody()->marca_id;
         $equipo->categoria_id = $req->getBody()->categoria_id;
-        $equipo->ram_id = $this->exist($req->getBody()->ram_id);
-        $equipo->disco_id = $this->exist($req->getBody()->disco_id);
-        $equipo->pantalla_id = $this->exist($req->getBody()->pantalla_id);
-        $equipo->empleado_id = $this->exist($req->getBody()->empleado_id);
+        $equipo->ram_id = ($req->getBody()->ram_id);
+        $equipo->disco_id = ($req->getBody()->disco_id);
+        $equipo->pantalla_id = ($req->getBody()->pantalla_id);
+        $equipo->empleado_id = ($req->getBody()->empleado_id);
         $equipo->save();
     }
 
